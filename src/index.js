@@ -18,6 +18,7 @@ const DEFAULT_LOG_PATH = path.resolve('saray.log');
 const DEFAULT_ROOT_PATH = '';
 const DEFAULT_DYNPATH_STR = null;
 const DEFAULT_TIMEOUT = 60000;
+const DEFAULT_CONFIG_PATH = path.resolve('saray.conf.json');
 
 program
   .version('1.8.0-alpha')
@@ -30,7 +31,10 @@ program
   .option('--root <string>', 'The base root path (default: empty)', DEFAULT_ROOT_PATH)
   .option('--dynpath <string>', 'The string used as dynamic folder/file in path. Feature disabled with unset option (default: null)', DEFAULT_DYNPATH_STR)
   .option('--timeout <milliseconds>', 'The timeout to wait for endpoint before Saray respond with an HTTP 408', DEFAULT_TIMEOUT)
+  .option('--config <path>', 'The configuration file path', DEFAULT_CONFIG_PATH)
   .parse(process.argv);
+
+const configurationLoader = require('./configurationLoader')(program.config);
 
 const formatOut = bformat({ outputMode: 'short' });
 const log = bunyan.createLogger({
