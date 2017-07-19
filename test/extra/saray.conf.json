@@ -2,7 +2,7 @@
   "port": 8080,
   "path": "./data/saray",
   "endpoint": "http://localhost:3000",
-  "pfer": true,
+  "pfer-api": true,
   "log": "",
   "root": "",
   "dynpath": "-",
