@@ -1,0 +1,7 @@
+{
+  "port": 8091,
+  "path": "./test/data",
+  "log": "saray.log",
+  "endpoint": "http://localhost:8084",
+  "dynpath": "_"
+}

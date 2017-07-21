@@ -1,0 +1,5 @@
+{
+  "port": 8093,
+  "path": "./test/data",
+  "log": "saray.log"
+}

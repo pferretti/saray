@@ -1,0 +1,6 @@
+{
+  "port": 8094,
+  "path": "./test/data",
+  "log": "saray.log",
+  "root": "/saray/abc"
+}

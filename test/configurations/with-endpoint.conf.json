@@ -1,0 +1,6 @@
+{
+  "port": 8082,
+  "path": "./test/data",
+  "log": "saray.log",
+  "endpoint": "http://localhost:8084"
+}

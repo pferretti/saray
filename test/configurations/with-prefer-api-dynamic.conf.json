@@ -1,0 +1,8 @@
+{
+  "port": 8092,
+  "path": "./test/data",
+  "log": "saray.log",
+  "endpoint": "http://localhost:8084",
+  "pfer-api": true,
+  "dynpath": "_"
+}

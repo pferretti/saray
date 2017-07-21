@@ -1,0 +1,7 @@
+{
+  "port": 8089,
+  "path": "./test/data",
+  "log": "saray.log",
+  "endpoint": "http://localhost:9000",
+  "pfer-api": true
+}

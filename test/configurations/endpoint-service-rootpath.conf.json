@@ -1,0 +1,5 @@
+{
+  "port": 8087,
+  "path": "./test/data-endpoint",
+  "log": "saray-endpoint.log"
+}
